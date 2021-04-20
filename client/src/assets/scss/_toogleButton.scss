@@ -1,0 +1,30 @@
+.toogle_button_open{
+  width: 2em;
+  height: 1.3em;
+  background-color: transparent;
+  margin: 1em;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  .line{
+    width: 1.5em;
+    height: .1em;
+    background-color: white;
+  }
+  .longer_line{
+    width: 2em;
+   
+  }
+
+
+}
+
+@media screen and (min-width:50em){
+  .toogle_button_open{
+    display: none;
+  }
+}
+

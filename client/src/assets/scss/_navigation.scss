@@ -1,0 +1,93 @@
+.navigation {
+  height: 10vh;
+  width: 100%;
+  background-image: linear-gradient(-85deg, rgb(0, 0, 119), rgb(19, 0, 66));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+  position: fixed;
+  top: 0;
+  z-index: 12;
+
+  h3 {
+    padding-left: 2em;
+    font-family: "Philosopher", sans-serif;
+    font-size: 2em;
+    align-self: start;
+    margin-top: 0.6em;
+    color: rgb(216, 216, 216);
+    display: none;
+
+    span {
+      color: tomato;
+      margin-left: .5em;
+    }
+
+    a {
+      color: rgb(216, 216, 216);
+
+      
+    }
+  }
+
+  .nav {
+    margin-right: 6em;
+  }
+  .nav_links{
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 4em;
+   transition: all .5s linear;
+   
+   .active_link{
+     color: tomato;
+     font-size: 1.5em;
+     font-style: italic;
+     
+   }
+  }
+  .nav_links > a + a {
+    margin-left: 1em;
+
+    
+  }
+  a {
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+
+    &:hover, :active{
+      color: tomato;
+    }
+  }
+  .is_active {
+    color: tomato;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .navigation {
+    h3 {
+      font-size: 1.5em;
+      padding-left: 0.3em;
+      margin: 1em 2em 0 0;
+      display: block;
+    }
+    .nav_links{
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 51em) {
+  .navigation{
+    font-size: .8em;
+    h3 {
+      flex: 3;
+    }
+  
+    .nav_links{
+      flex: 2;
+    }
+  }
+}

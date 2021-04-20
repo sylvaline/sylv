@@ -1,0 +1,64 @@
+.side_drawer{
+ 
+
+  .side_drawer__menu_items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+    position: fixed;
+    top: 4em;
+    left: 0;
+    width: 60%;
+    padding: 1em;
+    background-image: linear-gradient(-85deg, rgb(0, 0, 119), rgb(19, 0, 66));
+    height: 100%;
+    z-index: 500;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
+  
+    &.open{
+      transform: translateX(0%);
+      
+    }
+
+    .side_drawer__item_border{
+      border-bottom: .1em solid tomato;
+      width: 8em;
+    }
+
+    &  a {
+      margin-top: 1em;
+      padding: .3em;
+      letter-spacing: .2em;
+      font-size: 1em;
+      font-weight: bolder;
+      width: 100%;
+      display: inline-block;
+    }
+
+    .side_drawer__menu_text{
+      width: 80%;
+      margin: 2.5em auto;
+      font-family: "Philosopher", sans-serif;
+
+      h2{
+        span{
+          color: tomato;
+          letter-spacing: .2em;
+          
+        }
+      }
+    
+    }
+  }
+
+}
+
+// @media screen and (max-width:30em){
+//   .side_drawer__menu_items{
+//     width: 100%;
+//   }
+// }

@@ -1,0 +1,144 @@
+.resume{
+  width: 90%;
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  line-height: 1.4;
+
+  .title{
+    margin-bottom: 1.5em;
+    
+    h2{
+      cursor: pointer;
+    }
+  }
+
+
+  .resume__card{
+    background-image: linear-gradient(-85deg, rgb(0, 0, 119), rgb(19, 0, 66));
+    display: flex;
+    align-items: center;
+    box-shadow: .2em .2em .5em  rgba(21, 2, 194, 0.5);
+    min-height: 20em;
+    width: 100%;
+    margin-top: 1.5em;
+    padding: 2em;
+
+    .resume__info__li_spacing {
+      ul{
+        li{
+          line-height: 1.5em;
+          letter-spacing: .05em;
+        }
+      }
+    }
+
+    .resume__info__margin{
+      margin-left: 3em;
+    }
+    
+    .resume__skill{
+     
+      width: 20%;
+      margin: auto;
+
+      ul{
+        li{
+          margin-top: 1em;
+        }
+      }
+    }
+
+    .resume__date{
+      flex: 1;
+      padding: .5em; 
+
+      .resume__date__info{
+        color: tomato;
+      }
+    
+    }
+    .resume__info{
+      flex: 2;
+       padding: .5em;
+
+       ul{
+         
+         li{
+           margin-top: 1em;
+         }
+       }
+       .resume__info__relevant__courses{
+         margin: 1em 0;
+         color: tomato;
+       }
+     }
+    
+  }
+
+  .resume__experience{
+    margin: 3.5em 0 1.5em;
+  }
+  h3{
+    margin: 3em 0 1.5em;
+    padding-left: 1em;
+  }
+
+  button{
+    width: 8em;
+    padding: .5em;
+    position: absolute;
+    top: 10em;
+    right: 2em;
+    background-color: tomato;
+    outline: none;
+    border: none;
+    border-radius: .3em;
+    color: rgb(216, 216, 216);
+    font-weight: bolder;
+    text-shadow: .2em .2em .5em rgba(0, 0, 0, 0.5);
+  }
+
+}
+
+@media screen and (max-width:50em){
+  .resume{
+    width: 100%;
+    margin-top: 3em;
+    
+
+    .resume__card{
+      width: 90%;
+      margin: .5em auto;
+      display: block;
+      
+      .resume__info__li_spacing {
+        padding: 0;
+        ul{
+          li{
+            line-height: 1.6em;
+            letter-spacing: .08em;
+          }
+        }
+      }
+
+      .resume__skill{
+     
+        width: 80%;
+        margin: auto;
+  
+        ul{
+          li{
+            margin-top: 1em;
+          }
+        }
+      }
+
+      .resume__info__margin{
+        margin-left: 0;
+      }
+      
+    }
+  }
+}

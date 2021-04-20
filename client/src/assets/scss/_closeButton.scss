@@ -1,0 +1,27 @@
+.toogle_button_close{
+
+  button{
+  width: 2em;
+  height: 2em;
+  margin: 1em;
+  text-indent: 20em;
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  &::after{
+    position: absolute;
+    content: "X";
+    text-indent: 0;
+    top :.2em;
+    right: .1em;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: white;
+  }
+
+  }
+
+}
