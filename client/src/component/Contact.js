@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Slide from 'react-reveal/Slide'
 
 function Contact() {
 
@@ -57,7 +58,7 @@ function Contact() {
 
   return (
    
-    
+    <Slide bottom>
     <div className="contact_me"> 
    
       <div className="title">
@@ -72,8 +73,8 @@ function Contact() {
          <ul>
            <li>I can help you to fix bugs on your already existing website.</li>
            <li>I can create a FullStack projects for you.</li>
-           <li>I'm very patient and understanding, so i will work with you untill you are satified.</li>
-           <li>I can create a landing page for you to market you goods or for affiliate marketing.</li>
+           <li>I'm very patient and understanding, so I will work with you untill you are satisfied.</li>
+           <li>I can create a landing page for you to market your goods or for affiliate marketing.</li>
          </ul>
         </div>
 
@@ -108,7 +109,7 @@ function Contact() {
        
        </div>
        </div>
-   
+       </Slide>
   )
 }
 

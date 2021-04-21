@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Slide from 'react-reveal/Slide'
 
 class Projects extends Component {
 
@@ -8,13 +9,15 @@ class Projects extends Component {
 
   render() {
     return (
+      
       <div className="my_project"> 
+      <Slide bottom >
         <div className="title">
         <h2 >Projects.</h2>
         </div>
         
-        
         <h3 className="my_project__space"></h3>
+       
          <div className="my_project__card">
           <div className="my_project__detail">
            <div className="my_project__detail__title">
@@ -38,7 +41,8 @@ class Projects extends Component {
            <img src="\image\Screenshot 2021-04-20 114808.jpg"></img>
           </div>
          </div>
-
+         </Slide>
+         <Slide bottom >
          <div className="my_project__card">
           <div className="my_project__detail">
            <div className="my_project__detail__title">
@@ -65,6 +69,7 @@ class Projects extends Component {
            <img src="\image\Screenshot 2021-04-20 115824.jpg"></img>
           </div>
          </div>
+         </Slide>
          </div>
      
     )

@@ -8,6 +8,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  display: none;
+  // margin-top: 10em;
+  // position: fixed;
+  // top: -3em;
+  // right: 1em;
+  // z-index: 1000;
+
+
   
   .line{
     width: 1.5em;
@@ -22,9 +30,9 @@
 
 }
 
-@media screen and (min-width:50em){
+@media screen and (max-width:50em){
   .toogle_button_open{
-    display: none;
+    display: block;
   }
 }
 

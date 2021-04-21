@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Slide from 'react-reveal/Slide'
 
 class Resume extends Component {
 
@@ -9,10 +10,13 @@ class Resume extends Component {
   render() {
     return (
       <div className="resume">
+        <Slide bottom>
         <div className="title">
         <h2 >Resume.</h2>
         </div>
         <button> DownLoad CV</button>
+        </Slide>
+        <Slide bottom>
         <h3 className="resume__experience">Experience</h3>
          <div className="resume__card">
           
@@ -26,13 +30,13 @@ class Resume extends Component {
           <div className="resume__info resume__info__li_spacing">
             <ul>
               <li>
-              It was a pleasure for me to build the companies first and only website. Which is used by may people.
+              It was a pleasure for me to build the company's first and only website. Which is used by may people.
               </li>
               <li>
               I was in charge of maintaining the code base and also making sure that the database is working properly.
               </li>
               <li>
-                I was able to also automate some tasks in the office using Python. For e.g fetching the daily changes in the database and sending it to the Boss phone at the end of every day work.
+                I was able to also write some script that automated some tasks in the office using Python. For e.g fetching the daily changes in the database and sending it to the Boss phone at the end of every day work.
               </li>
             </ul>
           </div>
@@ -115,6 +119,9 @@ class Resume extends Component {
               CSS, SASS
             </li>
             <li>
+              Python
+            </li>
+            <li>
               HTML
             </li>
             <li>
@@ -178,7 +185,7 @@ class Resume extends Component {
           </ul>
          </div>
          </div>
-
+         </Slide>
       </div>
     )
   }

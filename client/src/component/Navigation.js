@@ -1,15 +1,18 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import MenuItem from '../mobileMenu/MenuItem'
+import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import ToogleButton from './mobileMenu/ToogleButton';
+import MobileMenuu from './MobileMenuu';
 
 
-class Navigation extends Component {
 
-  render() {
+function Navigation() {
+  const[isMenuOpen, setMenuOpen] = useState(false)
     return (
       <React.Fragment>
         <div className="navigation">
-        <MenuItem />
+        <div className="hamburger" onClick={()=>setMenuOpen(!isMenuOpen)}>
+        <h4><i className="fas fa-bars"></i></h4>
+        </div>
         <h3> <NavLink to="/"> <i className="fas fa-home"></i></NavLink></h3>
         <div className="nav_links">
         <NavLink activeClassName="active_link" exact className="contact" to="/"> Home </NavLink>
@@ -18,9 +21,13 @@ class Navigation extends Component {
         <NavLink activeClassName="active_link" className="contact" to="/projects"> Projects</NavLink>
         </div>
         </div>
+
+        {
+          isMenuOpen && <MobileMenuu setMenuOpen={setMenuOpen}/>
+        }
       </React.Fragment>
     )
   }
-}
+
 
 export default Navigation

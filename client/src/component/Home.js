@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {NavLink} from 'react-router-dom'
-
-
-
+import Fade from 'react-reveal/Fade'
 
 const Home = () => {
 
@@ -24,6 +22,7 @@ const Home = () => {
         </div>
         
         <div className="content">
+        <Fade left>
         <div className="img_info">
         <img src="/image/mee.jpg"/>
         
@@ -39,6 +38,8 @@ const Home = () => {
         <a className="link" href="https://www.instagram.com/todaywithsylva/" target="blank"> <i className="fab fa-instagram"></i></a>
         </div>
         </div>
+        </Fade>
+        <Fade right>
         <div className="other_info">
           <h1>Hey!</h1>
           <div className="other_info_link">  <NavLink className="link_button button_color" to="/projects"> Projects</NavLink>
@@ -48,8 +49,8 @@ const Home = () => {
         </p>
         <p> I enjoy programming in Python and Javascript applications as well as creating contents.</p>
         </div>
+        </Fade>
         </div>
-      
         </div>
       </React.Fragment>
      

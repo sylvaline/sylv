@@ -7,6 +7,8 @@ import Navigation from './component/Navigation';
 import Footer from './component/Footer';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Loading from './component/Loading';
+import MenuItem from './component/mobileMenu/MenuItem'
+import MobileMenuu from './component/MobileMenuu';
 
 
 function App() {
@@ -30,6 +32,10 @@ function App() {
             <div className="home">
             <Route exact path="/" component={Home}/>
             </div>
+
+            <div className="">
+            <Route exact path="/mobile_menu" component={MobileMenuu}/>
+            </div>
             
             <div className="resume">
             <Route exact path="/resume" component={Resume}/>
@@ -40,7 +46,7 @@ function App() {
             </div>
     
             <div className="projects">
-            <Route  exact path="/projects" component={Projects}/>
+            <Route exact  path="/projects" component={Projects}/>
             </div>
             
             <div className="footer">
